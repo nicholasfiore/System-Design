@@ -3,8 +3,9 @@
 /* --- begin YUI2: CSS Reset ------------------------------------------- */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td
 {
-	margin:0;
+	margin:50px;
 	padding:0;
+    
 }
 table
 {
@@ -178,10 +179,10 @@ ol.niceList
 #page
 {
     display: block;
-    width: 960px;
+    width: 100%;
     margin: 0px auto;
     padding-top: 12px;
-    background-image: url(background-main.png);
+    background-image: url(background-main-edit.png);
 }
 
 #demo

@@ -325,7 +325,7 @@ ol.niceList
 {
     border: 1px solid black;
     padding: 6px;    
-    background-image: url(images/background-paper.jpg);
+    background-image: url(background-paper.jpg);
 }
 
 .noticeHeadingLight
@@ -423,8 +423,6 @@ ol.niceList
 	background-color: inherit;
 	border: 1px solid inherit;
 	border-radius:10px
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;	
 }
 
 .listTable th 

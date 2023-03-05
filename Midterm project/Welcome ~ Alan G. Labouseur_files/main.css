@@ -262,9 +262,9 @@ ol.niceList
     float: left;
     color: black;
 }
-#content a:link    {color: #800020; border: 1px solid #d1d1d1}  /* unvisited link */
-#content a:visited {color: #800020; border: 1px solid #d1d1d1}  /* visited link */
-#content a:active  {color: #800020; border: 1px solid #d1d1d1}  /* selected link */
+/*#content a:link    {color: #800020; border: 1px solid #d1d1d1}  /* unvisited link */
+/*#content a:visited {color: #800020; border: 1px solid #d1d1d1}  /* visited link */
+/*#content a:active  {color: #800020; border: 1px solid #d1d1d1}  /* selected link */
 #content a:hover   {color: #800020; border: 1px solid black}    /* mouse over link */
 
 #footer
@@ -288,6 +288,38 @@ ol.niceList
     margin-left: 20px;
     margin-right: 20px;
     overflow: auto
+}
+
+/* shadowBox, .rainbow, .rainbow_text_animated, and @keyframes were taken from here https://stackoverflow.com/questions/54702124/rainbow-text-animation-using-only-css */
+#shadowBox {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+    border: 3px solid;
+}
+
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+}
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
 }
 
 .clear
